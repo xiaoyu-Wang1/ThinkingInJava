@@ -1,6 +1,8 @@
 package typeinfo;//: typeinfo/RegisteredFactories.java
 // Registering Class Factories in the base class.
 
+import net.mindview.util.TypeCounter;
+
 import typeinfo.factory.*;
 
 import java.util.*;
@@ -105,8 +107,14 @@ class PowerSteeringBelt extends Belt {
 
 public class RegisteredFactories {
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++)
-            System.out.println(Part.createRandom());
+//        for (int i = 0; i < 10; i++)
+//            System.out.println(Part.createRandom());
+
+        TypeCounter counter = new TypeCounter(Part.class);
+        for (int i = 0; i < 10; i++) {
+            counter.count(Part.createRandom());
+        }
+        System.out.println(counter);
     }
 } /* Output:
 GeneratorBelt

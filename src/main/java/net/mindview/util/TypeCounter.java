@@ -22,7 +22,7 @@ public class TypeCounter extends HashMap<Class<?>, Integer> {
 
     private void countClass(Class<?> type) {
         Integer quantity = get(type);
-        put(type, quantity == null ? 1 : quantity + 1);
+        this.put(type, quantity == null ? 1 : quantity + 1);
         Class<?> superClass = type.getSuperclass();
         if (superClass != null &&
                 baseType.isAssignableFrom(superClass))
@@ -31,7 +31,7 @@ public class TypeCounter extends HashMap<Class<?>, Integer> {
 
     public String toString() {
         StringBuilder result = new StringBuilder("{");
-        for (Entry<Class<?>, Integer> pair : entrySet()) {
+        for (Entry<Class<?>, Integer> pair : this.entrySet()) {
             result.append(pair.getKey().getSimpleName());
             result.append("=");
             result.append(pair.getValue());
