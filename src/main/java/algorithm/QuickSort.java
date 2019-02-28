@@ -31,7 +31,7 @@ public class QuickSort {
         originArr[low] = pivotKey;
         return low;
     }
-    
+
     public static void quickSort(int[] originArr, int low, int high) {
         if (low < high) {
             // 1.分割
@@ -47,7 +47,7 @@ public class QuickSort {
         int[] originArr = {49, 38, 65, 97, 76, 13, 27, 49};
         System.out.println(partition(originArr, 0, originArr.length - 1));
         System.out.println(Arrays.toString(originArr));
-        quickSort(originArr, 0 , originArr.length - 1);
+        quickSort(originArr, 0, originArr.length - 1);
         System.out.println(Arrays.toString(originArr));
     }
 }

@@ -6,7 +6,7 @@ public class ThreadLocalTest2 {
 
         private ThreadLocal<Integer> threadLocal = new ThreadLocal<Integer>();
 
-        public MyRunnable(){
+        public MyRunnable() {
             threadLocal.set((int) (Math.random() * 100D));
             System.out.println(Thread.currentThread().getName() + ":" + threadLocal.get() + " at constructor");
         }

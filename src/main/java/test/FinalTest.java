@@ -6,11 +6,10 @@ package test;
 public class FinalTest {
 
 
-
     public static void main(String[] args) {
-       Student a = new Student("xiaoyu", 20);
-       Student b = new Student("xiaoyu", 20);
-       final Student c = a;
+        Student a = new Student("xiaoyu", 20);
+        Student b = new Student("xiaoyu", 20);
+        final Student c = a;
 //       c = b; (编译输出:无法为最终变量c分配值)
         a.setAge(27);
         System.out.println(c);

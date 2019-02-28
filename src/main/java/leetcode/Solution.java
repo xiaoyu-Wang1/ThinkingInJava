@@ -6,20 +6,16 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ * Definition for singly-linked list. public class ListNode { int val; ListNode next; ListNode(int
+ * x) { val = x; } }
  */
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 两个数中至少有一个为0
-        if(l1.val == 0) {
+        if (l1.val == 0) {
             return l2;
         }
-        if(l2.val == 0) {
+        if (l2.val == 0) {
             return l1;
         }
         // 两个数均不为0
@@ -73,7 +69,10 @@ public class Solution {
 }
 
 class ListNode {
-      int val;  // 值
-      ListNode next;    // 单向链表
-      ListNode(int x) { val = x; }  // 构造函数
+    int val;  // 值
+    ListNode next;    // 单向链表
+
+    ListNode(int x) {
+        val = x;
+    }  // 构造函数
 }

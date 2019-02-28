@@ -25,7 +25,7 @@ public class QuickSort2 {
     public static void quickSort(int arr[], int low, int high) {
         if (low < high) {
             int pivotLoc = partition(arr, low, high);
-            quickSort(arr, low, pivotLoc -1);
+            quickSort(arr, low, pivotLoc - 1);
             quickSort(arr, pivotLoc + 1, high);
         }
     }
@@ -34,7 +34,7 @@ public class QuickSort2 {
         int[] originArr = {49, 38, 65, 97, 76, 13, 27, 49};
         System.out.println(partition(originArr, 0, originArr.length - 1));
         System.out.println(Arrays.toString(originArr));
-        quickSort(originArr, 0 , originArr.length - 1);
+        quickSort(originArr, 0, originArr.length - 1);
         System.out.println(Arrays.toString(originArr));
     }
 }

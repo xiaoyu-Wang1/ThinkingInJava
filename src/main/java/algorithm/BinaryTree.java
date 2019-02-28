@@ -22,15 +22,10 @@ public class BinaryTree {
     }
 
     /**
-     * 创建一个完全二叉树:
-     *      96
-     *     /  \
-     *   83   27
-     *  /  \
-     * 39   30
+     * 创建一个完全二叉树: 96 /  \ 83   27 /  \ 39   30
      */
     public Node createFullBinaryTree(Integer[] arr) {
-        if (arr.length == 0){
+        if (arr.length == 0) {
             return new Node<>();
         }
         Node root = new Node<>(arr[0], null, null);

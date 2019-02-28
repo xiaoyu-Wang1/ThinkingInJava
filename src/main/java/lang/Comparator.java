@@ -9,20 +9,8 @@ import java.util.*;
  */
 class ComparatorConsumerInfo implements java.util.Comparator<ConsumerInfo> {
     /**
-     * 顺序（从小到大）：
-     * if(price < o.price){
-     * return -1;
-     * }
-     * if(price > o.price){
-     * return 1;
-     * }
-     * 倒序（从大到小）：
-     * if(price < o.price){
-     * return 1;
-     * }
-     * if(price > o.price){
-     * return -1;
-     * }
+     * 顺序（从小到大）： if(price < o.price){ return -1; } if(price > o.price){ return 1; } 倒序（从大到小）：
+     * if(price < o.price){ return 1; } if(price > o.price){ return -1; }
      */
     @Override
     public int compare(ConsumerInfo o1, ConsumerInfo o2) {

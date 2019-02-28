@@ -7,9 +7,11 @@ import java.util.Stack;
 // 链式存储的二叉树
 public class BSTree {
     private TreeNode root = null;
+
     public TreeNode getRoot() {
         return root;
     }
+
     public BSTree(TreeNode root) {
         this.root = root;
     }
@@ -153,8 +155,7 @@ public class BSTree {
                 if (node != null) {
                     stack.push(node);
                     node = node.leftChild;
-                }
-                else {
+                } else {
                     node = stack.pop();
                     visted(node);
                     node = node.rightChild;
@@ -228,6 +229,7 @@ public class BSTree {
         }
         return subTree;
     }
+
     // 添加节点进搜索树
     private TreeNode add(TreeNode subTree, int data) {
         if (null == subTree) {
@@ -247,7 +249,7 @@ public class BSTree {
             return false;
         } else if (data > subTree.data) {
             return contains(subTree.rightChild, data);
-        } else if (data < subTree.data){
+        } else if (data < subTree.data) {
             return contains(subTree.leftChild, data);
         } else {
             return true;
@@ -297,6 +299,7 @@ public class BSTree {
         System.out.println("后序遍历:");
         TreeNode.nonRecPostOrder(tree.getRoot());
     }
+
     private static boolean checkDup(int[] arr, int value) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == value)

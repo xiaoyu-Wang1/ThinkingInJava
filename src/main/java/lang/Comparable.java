@@ -64,21 +64,9 @@ class ConsumerInfo implements java.lang.Comparable<ConsumerInfo> {
     }
 
     /**
-     * 这里比较的是什么, Collections.sort方法实现的就是按照此比较的东西排列
-     * 顺序（从小到大）：
-     * if(price < o.price){
-     * return -1;
-     * }
-     * if(price > o.price){
-     * return 1;
-     * }
-     * 倒序（从大到小）：
-     * if(price < o.price){
-     * return 1;
-     * }
-     * if(price > o.price){
-     * return -1;
-     * }
+     * 这里比较的是什么, Collections.sort方法实现的就是按照此比较的东西排列 顺序（从小到大）： if(price < o.price){ return -1; }
+     * if(price > o.price){ return 1; } 倒序（从大到小）： if(price < o.price){ return 1; } if(price >
+     * o.price){ return -1; }
      */
     @Override
     public int compareTo(ConsumerInfo o) {

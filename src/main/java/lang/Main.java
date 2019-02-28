@@ -2,6 +2,7 @@ package lang;
 
 public class Main {
     private static String b = "b";
+
     public static void main(String[] args) {
         String s = "s";
         int a = 1;

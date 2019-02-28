@@ -9,6 +9,7 @@ public class RunnableTest {
 
 class PrimeRun implements Runnable {
     private long minPrime;
+
     PrimeRun(long minPrime) {
         this.minPrime = minPrime;
     }
