@@ -13,7 +13,7 @@ class Part {
         return getClass().getSimpleName();
     }
 
-    static List<Class<? extends  Part>> classList =
+    static List<Class<? extends Part>> classList =
             new ArrayList<>();
 
     static {

@@ -1,6 +1,7 @@
 package generics;//: generics/Performs.java
 
 public interface Performs {
-  void speak();
-  void sit();
+    void speak();
+
+    void sit();
 } ///:~

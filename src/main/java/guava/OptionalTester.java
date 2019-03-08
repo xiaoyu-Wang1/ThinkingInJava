@@ -9,7 +9,7 @@ public class OptionalTester {
     public static void main(String args[]) {
         OptionalTester guavaTester = new OptionalTester();
 
-        Integer value1 =  null;
+        Integer value1 = null;
         Integer value2 = 10;
 
         //Optional.fromNullable - allows passed parameter to be null.
@@ -18,7 +18,7 @@ public class OptionalTester {
         //Optional.of - throws NullPointerException if passed parameter is null
         Optional<Integer> b = Optional.of(value2);
 
-        System.out.println(guavaTester.sum(a,b));
+        System.out.println(guavaTester.sum(a, b));
 
         System.out.println(Strings.emptyToNull(""));
     }

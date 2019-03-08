@@ -1,7 +1,8 @@
 package generics;//: generics/ArrayOfGenericReference.java
 
-class Generic<T> {}
+class Generic<T> {
+}
 
 public class ArrayOfGenericReference {
-  static Generic<Integer>[] gia;
+    static Generic<Integer>[] gia;
 } ///:~

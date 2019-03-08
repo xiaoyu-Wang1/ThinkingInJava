@@ -11,8 +11,8 @@ public class DateTest {
         String str4 = "1927-12-31 23:54:09";
         Date sDt3 = sf.parse(str3);
         Date sDt4 = sf.parse(str4);
-        long ld3 = sDt3.getTime() /1000;
-        long ld4 = sDt4.getTime() /1000;
-        System.out.println(ld4-ld3);
+        long ld3 = sDt3.getTime() / 1000;
+        long ld4 = sDt4.getTime() / 1000;
+        System.out.println(ld4 - ld3);
     }
 }
