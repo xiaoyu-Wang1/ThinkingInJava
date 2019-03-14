@@ -8,8 +8,7 @@ import net.mindview.util.*;
 
 public class CoffeeGenerator
         implements Generator<Coffee>, Iterable<Coffee> {
-    private Class[] types = {Latte.class, Mocha.class,
-            Cappuccino.class, Americano.class, Breve.class,};
+    private Class[] types = {Latte.class, Mocha.class, Cappuccino.class, Americano.class, Breve.class,};
     private static Random rand = new Random(47);
 
     public CoffeeGenerator() {
@@ -24,8 +23,7 @@ public class CoffeeGenerator
 
     public Coffee next() {
         try {
-            return (Coffee)
-                    types[rand.nextInt(types.length)].newInstance();
+            return (Coffee) types[rand.nextInt(types.length)].newInstance();
             // Report programmer errors at run time:
         } catch (Exception e) {
             throw new RuntimeException(e);
