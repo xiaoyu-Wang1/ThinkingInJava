@@ -95,8 +95,7 @@ class Solid<T extends Dimension & HasColor & Weight> {
     }
 }
 
-class Bounded
-        extends Dimension implements HasColor, Weight {
+class Bounded extends Dimension implements HasColor, Weight {
     public java.awt.Color getColor() {
         return null;
     }
@@ -108,8 +107,7 @@ class Bounded
 
 public class BasicBounds {
     public static void main(String[] args) {
-        Solid<Bounded> solid =
-                new Solid<Bounded>(new Bounded());
+        Solid<Bounded> solid = new Solid<Bounded>(new Bounded());
         solid.color();
         solid.getY();
         solid.weight();
