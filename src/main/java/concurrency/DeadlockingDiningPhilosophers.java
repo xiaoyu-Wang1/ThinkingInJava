@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 
 public class DeadlockingDiningPhilosophers {
     public static void main(String[] args) throws Exception {
-        int ponder = 5;
+        int ponder = 0;
         if (args.length > 0)
             ponder = Integer.parseInt(args[0]);
         int size = 5;
@@ -17,8 +17,7 @@ public class DeadlockingDiningPhilosophers {
         for (int i = 0; i < size; i++)
             sticks[i] = new Chopstick();
         for (int i = 0; i < size; i++)
-            exec.execute(new Philosopher(
-                    sticks[i], sticks[(i + 1) % size], i, ponder));
+            exec.execute(new Philosopher(sticks[i], sticks[(i + 1) % size], i, ponder));
         if (args.length == 3 && args[2].equals("timeout"))
             TimeUnit.SECONDS.sleep(5);
         else {
